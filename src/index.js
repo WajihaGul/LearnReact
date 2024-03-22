@@ -1,17 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const myName = "Wajiha Gul";
+const img1 = "https://picsum.photos/id/1/200/300";
+const img2 = "https://picsum.photos/id/1/250/300";
+const img3 = "https://picsum.photos/id/1/300/300";
+const link = "https://chat.openai.com/c/ae134569-d390-4485-aa00-0a712b65b144";
+
 ReactDOM.render(
   <>
-    <h1>MY TOP 5 NETFLIX PICKS</h1>
-    <p>I can watch them thousands of time and still cant get bored</p>
-    <ol>
-      <li>FRIENDS</li>
-      <li>Miss Gilmore</li>
-      <li>Jab We Met</li>
-      <li>Kabhi Khushi Kabhi Gham</li>
-      <li>Modern Family</li>
-    </ol>
+    <h1 contentEditable="true"> My Name is {myName}</h1>
+    <p>Uploading Random Images</p>
+    <img src={img1} alt="Random Image 1" />
+    <img src={img2} alt="Random Image 2" />
+
+    <a href={link} target="_blank">
+      <img src={img3} alt="Random Image 3" />
+    </a>
   </>,
   document.getElementById("root")
 );
