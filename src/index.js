@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+  <>
+    <h1>MY TOP 5 NETFLIX PICKS</h1>
+    <p>I can watch them thousands of time and still cant get bored</p>
+    <ol>
+      <li>FRIENDS</li>
+      <li>Miss Gilmore</li>
+      <li>Jab We Met</li>
+      <li>Kabhi Khushi Kabhi Gham</li>
+      <li>Modern Family</li>
+    </ol>
+  </>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
